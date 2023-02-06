@@ -20,76 +20,73 @@
   }
   /*  -------------HEADER--------------- */
   .header {
-  padding-top: 19px;
-  padding-bottom: 19px;
+    padding-top: 19px;
+    padding-bottom: 19px;
 
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+  }
+  .header-navigation-list {
+    display: flex;
+    gap: 40px;
 
-}
+    letter-spacing: 0.02em;
+
+    color: var(--dark-color);
+  }
+  .header-navigation-item:hover,
+  .header-navigation-item:focus {
+    color: var(--brand-hovered-color);
+  }
+  .header-navigation-item {
+    transition: color var(--transit-data);
+  }
+  .current {
+    color: var(--brand-hovered-color);
+  }
+  .dash {
+    position: relative;
+  }
+  .link.current::after {
+    position: absolute;
+    bottom: -24px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--brand-hovered-color);
+    border-radius: 2px;
+  }
   .header-menu-btn,
   .menu-mobile {
     display: none;
   }
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap:120px;
-}
-.header-navigation-list {
-  
-  display: flex;
-  gap: 40px;
+  .header-contacts-list {
+    display: block;
 
- letter-spacing: 0.02em;
-
-color: var(--dark-color);
-}
-.header-navigation-item:hover,
-.header-navigation-item:focus {
-  color: var(--brand-hovered-color);
-} 
-.header-navigation-item {
-  transition: color var(--transit-data);
-}
-.current {
-  color: var(--brand-hovered-color);
-}
-.dash {
-  position: relative;
-}
-.link.current::after {
-  position: absolute;
-  bottom: -24px;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-
-  background-color: var(--brand-hovered-color);
-  border-radius: 2px;
-}
-
-.header > .container {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-contacts-list {
-  display: block;
-
-font-weight: 400;
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 0.04em;
-} 
-.header-contacts-item:hover,
-.header-contacts-item:focus {
-  color: var(--brand-hovered-color);
-} 
-.header-contacts-item {
-  transition: color var(--transit-data);
-}
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+  .header-contacts-item:hover,
+  .header-contacts-item:focus {
+    color: var(--brand-hovered-color);
+  }
+  .header-contacts-item {
+    transition: color var(--transit-data);
+  }
   /* ------------HERO--------------- */
   .hero {
     padding-top: 111px;
@@ -137,13 +134,7 @@ letter-spacing: 0.04em;
     text-align: left;
   }
   /* -----------OUR  TEAM------------ */
-  .team > .container,
-  .customers > .container,
-  .footer > .container
-   {
-    width: 576px;
-  }
-  .team {
+    .team {
     padding-bottom: 104px;
   }
   .team-list {
@@ -168,31 +159,37 @@ letter-spacing: 0.04em;
   }
   /* ----------FOOTER----------------- */
   .footer > .container {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
   }
-.footer-socials-text,
-.footer-form-label {
-  text-align: left;
-}
-.footer-wrap {
-  margin: 0;
-  text-align: left;
-}
-.footer-form-wrap {
-  display: flex;
-  gap: 24px;
+  .footer-socials-text,
+  .footer-form-label {
+    text-align: left;
   }
-.footer-form-input {
-  width: 264px;
+  .footer-wrap {
+    margin: 0;
+    text-align: left;
+  }
+  .footer-form-wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+  .footer-form-btn {
+    margin-top: 0;
+  }
+  /* ----------BACKDROP  AND  MODAL---------- */
+  .backdrop-modal {
+    width: 408px;
+  }
 }
-.footer-form-btn {
-  margin-top: 0;
-}
-/* ----------BACKDROP  AND  MODAL---------- */
-.backdrop-modal {
-  width: 408px;
-}
-
-}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team > .container,
+  .customers > .container,
+  .footer > .container {
+    width: 576px;
+  }
+ }

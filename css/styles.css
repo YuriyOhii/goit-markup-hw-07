@@ -133,11 +133,10 @@ img {
 
   width: 100vw;
   height: 100vh;
-  padding: 40px;
+  padding: 40px 40px 80px 40px;
 
   background-color: var(--main-bkg-color);
-
-}
+  }
 .btn-menu-close {
   position: absolute;
   top: 40px;

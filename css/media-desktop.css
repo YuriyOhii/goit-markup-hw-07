@@ -10,6 +10,29 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  /* ---------------HEADER--------------- */
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .link.logo {
+    line-height: 1.33;
+  }
+  .main-nav {
+    gap:76px;
+  }
+  .link.current::after {
+    bottom: -25px;
+  }
+  .header-contacts-list {
+    display: flex;
+    gap:40px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   /* ---------------HERO----------------- */
   .hero {
     padding-top: 187px;
