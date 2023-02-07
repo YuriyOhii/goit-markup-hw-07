@@ -185,6 +185,18 @@
   .backdrop-modal {
     width: 408px;
   }
+  /* ---------------PORTFOLIO------------ */
+  .products.section {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.products .filtr-list {
+  flex-wrap: nowrap;
+  column-gap: 24px;
+  justify-content: center;
+
+  margin-bottom: 64px;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team > .container,
@@ -192,4 +204,5 @@
   .footer > .container {
     width: 576px;
   }
+  
  }
