@@ -63,10 +63,10 @@
           <div class="mobile-menu-wrap">
             <ul class="mobile-header-navigation-list">
               <li class="mobile-header-navigation-item">
-                <a href="./index.html" class="link current">Studio</a>
+                <a href="./index.html" class="link">Studio</a>
               </li>
               <li class="mobile-header-navigation-item">
-                <a href="./portfolio.html" class="link">Portfolio</a>
+                <a href="./portfolio.html" class="link current">Portfolio</a>
               </li>
               <li class="mobile-header-navigation-item">
                 <a href="" class="link">Contacts</a>
@@ -90,8 +90,8 @@
                   <a href="" class="mobile-header-socials-link link">
                     <svg
                       class="mobile-header-socials-icon"
-                      width="16"
-                      height="16"
+                      width="24"
+                      height="24"
                     >
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
@@ -101,8 +101,8 @@
                   <a href="" class="mobile-header-socials-link link">
                     <svg
                       class="mobile-header-socials-icon"
-                      width="16"
-                      height="16"
+                      width="24"
+                      height="24"
                     >
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
@@ -112,8 +112,8 @@
                   <a href="" class="mobile-header-socials-link link">
                     <svg
                       class="mobile-header-socials-icon"
-                      width="16"
-                      height="16"
+                      width="24"
+                      height="24"
                     >
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
@@ -123,8 +123,8 @@
                   <a href="" class="mobile-header-socials-link link">
                     <svg
                       class="mobile-header-socials-icon"
-                      width="16"
-                      height="16"
+                      width="24"
+                      height="24"
                     >
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -153,57 +153,100 @@
           <!-- Filtr -->
           <ul class="filtr-list">
             <li class="filtr-list-item">
-              <button type="button" class="buttons filtr-list-button">All</button>
+              <button type="button" class="buttons filtr-list-button">
+                All
+              </button>
             </li>
             <li class="filtr-list-item">
-              <button type="button" class="buttons filtr-list-button">Web Site</button>
+              <button type="button" class="buttons filtr-list-button">
+                Web Site
+              </button>
             </li>
             <li class="filtr-list-item">
-              <button type="button" class="buttons filtr-list-button">App</button>
+              <button type="button" class="buttons filtr-list-button">
+                App
+              </button>
             </li>
             <li class="filtr-list-item">
-              <button type= "button" class="buttons filtr-list-button">Design</button>
+              <button type="button" class="buttons filtr-list-button">
+                Design
+              </button>
             </li>
             <li class="filtr-list-item">
-              <button type="button" class="buttons filtr-list-button">Marketing</button>
+              <button type="button" class="buttons filtr-list-button">
+                Marketing
+              </button>
             </li>
           </ul>
-          <!-- Our products -->
-          <!-- <ul class="list products-list">
-            <li class="item">
-              <a class="link products-link" href=""
+          <ul class="products-gallery">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href=""
                 ><div class="products-wrap">
-                  <img
-                    class="image"
-                    src="./images/portfolio/bank-application.jpg"
-                    alt="Few screens of bank application"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/bank-application-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/bank-application-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/bank-application-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/bank-application-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/portfolio/media-tablet-desktop-360_300/bank-application-360_300.jpg"
+                      alt="Few screens of bank application"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
+
                   <div class="products-wrap-overlay">
-                    <p class="products-overlay-text text">
+                    <p class="products-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Banking App Interface Concept</h2>
-                  <p class="text">App</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Banking App Interface Concept</h2>
+                  <p class="products-gallery-desc-text">App</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/smartfon-qr-code-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/smartfon-qr-code-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/smartfon-qr-code-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/smartfon-qr-code-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                     <img
                     class="image"
-                    src="./images/portfolio/smartfon-qr-code.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/smartfon-qr-code-360_300.jpg"
                     alt="Screen of QR-code"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                 
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -213,22 +256,39 @@
                   </div>
                 </div>
 
-                <div class="desc">
-                  <h2 class="title">Cashless Payment</h2>
-                  <p class="text">Marketing</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Cashless Payment</h2>
+                  <p class="products-gallery-desc-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/meditaion-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/meditaion-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/meditaion-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/meditaion-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
                     class="image"
-                    src="./images/portfolio/meditaion.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/meditaion-360_300.jpg"
                     alt="Laptop and smartphone wuth started application"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                  
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -237,22 +297,39 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Meditaion App</h2>
-                  <p class="text">App</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Meditaion App</h2>
+                  <p class="products-gallery-desc-text">App</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/taxi-servise-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/taxi-servise-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/taxi-servise-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/taxi-servise-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
                     class="image"
-                    src="./images/portfolio/taxi-servise.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/taxi-servise-360_300.jpg"
                     alt="A driver is holding a helm"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                  
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -261,22 +338,39 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Taxi Service</h2>
-                  <p class="text">Marketing</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Taxi Service</h2>
+                  <p class="products-gallery-desc-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/screens-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/screens-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/screens-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/screens-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
                     class="image"
-                    src="./images/portfolio/screens.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/screens-360_300.jpg"
                     alt="Screen illustrations"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                  
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -285,22 +379,39 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Screen Illustrations</h2>
-                  <p class="text">Design</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Screen Illustrations</h2>
+                  <p class="products-gallery-desc-text">Design</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href=""
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href=""
                 ><div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/courses-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/courses-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/courses-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/courses-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
                     class="image"
-                    src="./images/portfolio/courses.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/courses-360_300.jpg"
                     alt="A girl in yellow glasses is smiling to her phone"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                  
 
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
@@ -310,22 +421,39 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Online Courses</h2>
-                  <p class="text">Marketing</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Online Courses</h2>
+                  <p class="products-gallery-desc-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/instagram-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/instagram-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/instagram-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/instagram-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                   <img
                     class="image"
-                    src="./images/portfolio/instagram.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/instagram-360_300.jpg"
                     alt="Screens of Instagram Stories"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                  
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -334,22 +462,39 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Instagram Stories Concept</h2>
-                  <p class="text">Design</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Instagram Stories Concept</h2>
+                  <p class="products-gallery-desc-text">Design</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/organic-food-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/organic-food-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/organic-food-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/organic-food-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
                     class="image"
-                    src="./images/portfolio/organic-food.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/organic-food-360_300.jpg"
                     alt="A human is holding a bag with fresh fruits and vegetables"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                  
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -359,22 +504,39 @@
                   </div>
                 </div>
 
-                <div class="desc">
-                  <h2 class="title">Organic Food</h2>
-                  <p class="text">Web site</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Organic Food</h2>
+                  <p class="products-gallery-desc-text">Web site</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link products-link" href="">
+            <li class="products-gallery-item">
+              <a class="link products-gallery-item-link" href="">
                 <div class="products-wrap">
-                  <img
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/media-tablet-desktop-360_300/fresh-coffee-360_300.jpg 1x,
+                      ./images/portfolio/media-tablet-desktop-720_360/fresh-coffee-720_600.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/media-mobile-396_280/fresh-coffee-396_280.jpg 1x,
+                        ./images/portfolio/media-mobile-792_560/fresh-coffee-792_560.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                     <img
                     class="image"
-                    src="./images/portfolio/fresh-coffee.jpg"
+                    src="./images/portfolio/media-tablet-desktop-360_300/fresh-coffee-360_300.jpg"
                     alt="A cup of milk coffee"
                     width="360"
                     height="300"
                   />
+                  </picture>
+                 
                   <div class="products-wrap-overlay">
                     <p class="products-overlay-text text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -383,13 +545,13 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="title">Fresh Coffee</h2>
-                  <p class="text">Web Site</p>
+                <div class="products-gallery-item-desc">
+                  <h2 class="products-gallery-desc-title">Fresh Coffee</h2>
+                  <p class="products-gallery-desc-text">Web Site</p>
                 </div>
               </a>
             </li>
-          </ul> -->
+          </ul>
         </div>
       </section>
     </main>
